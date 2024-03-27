@@ -50,3 +50,7 @@ a{
   border-radius: 5px; /* redondear esquinas */
   cursor: pointer; /* cursor de la mano */
 }  
+
+body{
+  background-color: rgb(36, 34, 34);
+}
