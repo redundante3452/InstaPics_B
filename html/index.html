@@ -4,24 +4,24 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/InstaPics_B/styles/styles.css" />
     <script type="module" src="script.js"></script>
-  </head>
+    </head>
+
   <body>
     <main>
-      <section>
-        <h2>Instagram</h2>
-        <form action="" method="POST">
-          <input id="nombre" type="text" placeholder="Usuario" />
-          <input id="contraseña" type="text" placeholder="Contraseña" />
-          <input type="submit" value="Entrar" />
-        </form>
-        <section>
+      <form class="formulario-login" action="" method="POST">
+          <h2>Instagram</h2>
+          <div>
+            <input class="formulario" id="nombre" type="text" placeholder="Usuario" />
+          </div>
+          <div>
+            <input class="formulario" type="text" placeholder="Contraseña" />
+          </div>
+          <input class="button" type="submit" value="Entrar"/>
           <p>
-            ¿No tienes una cuenta?<a href="/html/register.html">Registrate</a>
-          </p>
-        </section>
-      </section>
+            ¿No tienes una cuenta?<a href="/InstaPics_B/html/register.html">Registrate</a></p>
+        </form>
     </main>
   </body>
 </html>
