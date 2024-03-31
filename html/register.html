@@ -5,30 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/InstaPics_B/styles/register.css" />
-    <script type="module" src="script.js"></script>
-  </head>
+
+  </head>c
   <body>
     <main>
-        <form class="formulario-register" action="" method="POST">
+        <form class="formulario-register" id="formulario-register">
           <h2>Instagram</h2>
           <section class="inputs">
             <div>
-              <input  id="Correo" type="email" placeholder="correo electronico"/>
+              <input  id="email" type="email" placeholder="correo electronico" required/>
             </div>
             <div>
-              <input id="Nombre" type="text" placeholder="Nombre completo"/>
+              <input id="nombre" type="text" placeholder="Nombre completo" required/>
             </div>
             <div>
-              <input id="Nombre_usuario" type="text" placeholder="Nombre de Usuario"/>
+              <input id="nombre_usuario" type="text" placeholder="Nombre de Usuario" required/>
             </div>
             <div>
-              <input id="contraseña" type="password" placeholder="Contraseña"/>
+              <input id="password" type="password" placeholder="Contraseña" required/>
             </div>
             <div>
-              <input class="button" type="submit" value="Registrarse"/>
+              <input class="button" type="submit" value="Registrarse" />
             </div>
+            <script src="/InstaPics_B/javascript/register.js"></script> 
           </section>
         </form>
-    </main>
+      </main>
   </body>
 </html>
