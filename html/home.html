@@ -5,14 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/InstaPics_B/styles/home.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
       <section class="banner">
         <nav class="menu">
           <ul>
-            <img  src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" alt="foto perfil" />
+            <img class="img-perfil" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" 
+            alt="foto perfil" id="img"  />
+            <input type="file" name="foto" id="foto" >
+            <label for="foto"> cambiar foto</label>
+            <label for="usuario">usuario</label>
             <ul>
               nombre
             </ul>
@@ -31,6 +34,24 @@
           </ul>
         </nav>
       </section>
-    </header>   
+    </header>
+    <script src="/InstaPics_B/javascript/imagen.js"></script>
+    
+    <main>
+      <section class="publicaciones">
+        <div>
+          <img class="img-publicacion" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" alt="publicacion">
+        </div>
+        <div>
+          <img class="img-publicacion" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" alt="publicacion">
+        </div>
+        <div>
+          <input type="file" id="upload" name="upload" accept="image/*">
+          <label for="upload">Upload Image</label>
+        </div>
+      </section>
+    </main>
+    
   </body>
 </html>
+
