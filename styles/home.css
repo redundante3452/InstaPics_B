@@ -12,9 +12,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
     background-color: rgb(145, 157, 207);
     position: sticky;
     top: 0;
+
+    margin-bottom: 20px;
+    background-color: rgb(145, 157, 207);
     
 }
 
@@ -31,6 +35,7 @@ body{
     margin-top: -22px;
     border-radius: 40%;
     object-fit: cover;
+
 }
 input{
     width: 50%;
@@ -48,6 +53,14 @@ input{
     grid-template-rows: repeat(5,auto);
     gap: 2%;
     height: auto;
+    margin-top: -5px;
+}
+
+.publicaciones{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(5,auto);
+    gap: 2%;
 
 }
 .img-publicacion{
@@ -63,6 +76,7 @@ div{
     border-radius: 5px;
     padding: 10px;
     width: 83%;
+    width: 50%;
     display: grid;
     place-items: center;
 }
@@ -81,3 +95,4 @@ label{
     list-style-type: none;
     margin-left: 10px;
 }
+
