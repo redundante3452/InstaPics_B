@@ -10,6 +10,7 @@ formularioLogin.addEventListener('submit', (e) => {
         return alert("Usuario o contraseña incorrectos");
     }
     alert('Bienvenido ' + validUser.nombre_usuario)
+    sessionStorage.setItem('user', JSON.stringify(validUser)); 
     window.location.href = "home.html"
 
 });

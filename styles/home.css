@@ -2,10 +2,9 @@
 ul{
     display: flex;
     list-style-type: none;
-    margin-left: 130px;
+    margin-left: 110px;
     padding-left: 0;
     font-family: 'calibri', sans-serif;
-
 }
 
 header{
@@ -13,6 +12,11 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
+    background-color: rgb(145, 157, 207);
+    position: sticky;
+    top: 0;
+
     margin-bottom: 20px;
     background-color: rgb(145, 157, 207);
     
@@ -29,6 +33,9 @@ body{
     height: 5%;
     display: flex;
     margin-top: -22px;
+    border-radius: 40%;
+    object-fit: cover;
+
 }
 input{
     width: 50%;
@@ -37,11 +44,24 @@ input{
     border: 1px solid rgb(145, 157, 207);
     padding: 5px;
     margin-left: 20px;
+    margin-top: -10px;
+}
+
+.publicaciones{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(5,auto);
+    gap: 2%;
+    height: auto;
     margin-top: -5px;
 }
 
 .publicaciones{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(5,auto);
+    gap: 2%;
+
 }
 .img-publicacion{
     width: 90%;
@@ -55,6 +75,7 @@ div{
     border: 1px solid rgb(145, 157, 207);
     border-radius: 5px;
     padding: 10px;
+    width: 83%;
     width: 50%;
     display: grid;
     place-items: center;
@@ -64,3 +85,14 @@ a{
     text-decoration: none;
     color: black;
 }
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+}
+

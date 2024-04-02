@@ -14,24 +14,22 @@
             <img class="img-perfil" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" 
             alt="foto perfil" id="img"  />
             <input type="file" name="foto" id="foto" >
-            <label for="foto"> cambiar foto</label>
-            <label for="usuario">usuario</label>
+            <label for="foto"> + </label>
             <ul>
-              nombre
+              <li id="nombre_usuario">usurio</li>
             </ul>
             <ul>
-              publicaciones
+              <li id="nombre">nombre</li>
             </ul>
             <ul>
-              amigos
+              <li id="publicaciones">publicaciones:0</li>
             </ul>
             <ul>
-              solicitudes
+              <li id="amigos">amigos:0</li>
             </ul>
             <ul>
-              <input type="button" value="+">
+              <li>solicitudes:0</li>
             </ul>
-          </ul>
         </nav>
       </section>
     </header>
@@ -40,18 +38,14 @@
     <main>
       <section class="publicaciones">
         <div>
-          <img class="img-publicacion" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" alt="publicacion">
-        </div>
-        <div>
-          <img class="img-publicacion" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" alt="publicacion">
-        </div>
-        <div>
           <input type="file" id="upload" name="upload" accept="image/*">
           <label for="upload">Upload Image</label>
         </div>
+        <script src="/InstaPics_B/javascript/publicaciones.js"></script>
       </section>
     </main>
-    
+    <script src="/InstaPics_B/javascript/session.js"></script>
   </body>
 </html>
+
 
