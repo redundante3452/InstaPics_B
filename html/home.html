@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>perfil</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="/InstaPics_B/styles/home.css" />
   </head>
   <body>
     <header>
-      <section>
+      <section class="banner">
         <nav class="menu">
           <ul>
+            <img class="img-perfil" src="/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png" 
+            alt="foto perfil" id="img"  />
+            <input type="file" name="foto" id="foto" >
+            <label for="foto"> + </label>
             <ul>
-              nombre
+              <li id="nombre_usuario">usurio</li>
             </ul>
             <ul>
-              <button>+</button>
+              <li id="nombre">nombre</li>
+            </ul>
+            <ul>
+              <li id="publicaciones">publicaciones:0</li>
+            </ul>
+            <ul>
+              <li id="amigos">amigos:0</li>
+            </ul>
+            <ul>
+              <li>solicitudes:0</li>
             </ul>
           </ul>
         </nav>
       </section>
-      <section>
-        <nav class="menu">
-          <ul>
-            <img src="mdn-logo-sm.png" alt="foto perfil" />
-            <ul>
-              nombre
-            </ul>
-            <ul>
-              publicaciones
-            </ul>
-            <ul>
-              amigos
-            </ul>
-            <ul>
-              solicitudes
-            </ul>
-          </ul>
-        </nav>
-      </section>
-      s
     </header>
+    <script src="/InstaPics_B/javascript/imagen.js"></script>
+    
+    <main>
+      <section class="publicaciones">
+        <div>
+          <input type="file" id="upload" name="upload" />
+          <label for="upload">Upload Image</label>
+        </div>
+        
+      </section>
+      <script src="/InstaPics_B/javascript/publicaciones.js"></script>
+    </main>
+    <script src="/InstaPics_B/javascript/session.js"></script>
   </body>
 </html>
+
