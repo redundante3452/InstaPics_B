@@ -7,7 +7,11 @@ formularioLogin.addEventListener('submit', (e) => {
 
     const validUser = Users.find(user => user.email === email && user.password === password)
     if (!validUser) {
-        return alert("Usuario o contraseña incorrectos");
+        return Swal.fire({
+            icon: "error",
+            title: "Usuario no encontrado",
+            text: "campos vacíos o incorrectos",
+          });
     }
     alert('Bienvenido ' + validUser.nombre_usuario)
     sessionStorage.setItem('user', JSON.stringify(validUser)); 

@@ -9,7 +9,11 @@ formularioRegister.addEventListener('submit', (e) => {
     const Users = JSON.parse(localStorage.getItem("users")) || []
     const isUserRegistered = Users.find(user => user.email === email)
     if (isUserRegistered) {
-        return alert("El usuario ya esta registrado");
+        return Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Este usuario ya existe",
+          });
     }
     Users.push({email: email, nombre: nombre, nombre_usuario: nombre_usuario, password: password,})
 

@@ -1,4 +1,4 @@
-const defaultImage = '/InstaPics_B/images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png';
+const defaultImage = 'images/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png';
 const file = document.getElementById('foto');
 const img = document.getElementById('img');
 
